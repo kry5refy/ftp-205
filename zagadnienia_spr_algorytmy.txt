@@ -1,0 +1,35 @@
+Co bêdzie na sprawdzianie na "kartkach"
+
+1) tabela ++   i -- str 66 
+
+2) Teoria inkrementacja dekrementacja
+(plusy/minusy z przodu i z ty³u zmiennej
+3)1. co to jest programowanie?
+2. omówiæ 2 regu³y stosowane w jêzykach programowania
+3. omówiæ 2 definicje alogrytmu 
+4. cechy charatkerystyczne poprawnego alogrytmu 
+5. etapy konstruowania algorytmu 
+6. wymieniæ oraz omówiæ sposoby przedstawiania algortmu (do schematów mo¿na stosowaæ zrzuty ekranu)
+7. podaæ 4 elementy specyfikacji problemów 
+8. symbole stosowane w schematach blokowych (tabela) - mo¿e byæ wykonana jako zrzuty ekranu(odpowiednio pociêta)
+9. wymieniæ oraz omówiæ regu³y stosowane podczas rysowania schematów blokowych 
+10. wymieniæ oraz omówiæ podzia³ algorytmów
+11. wymieniæ oraz omówiæ z³o¿onoœci stosowane podczas oceny algorytmu 
+12.kody ASCII, co to jest i do czego s³u¿y
+
+4) znak sigmy
+a) jest wzór podaæ wynk
+b)s¹ liczby podaæ wzór
+
+5)omówiæ dok³adnie pêtle
+a)for
+b)do while
+
+6)tabela, lista kroków oraz algorytm (blokowy) do euklidesa
+
+7)bêdzie algoryt i trzeba bêdzie zrobiæ tabelê symulacji algorytmu
+
+
+
+
+
