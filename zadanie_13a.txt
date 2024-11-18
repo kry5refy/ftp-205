@@ -1,0 +1,12 @@
+Zadanie 13a
+Dany jest trójk¹t prostok¹tny.
+wykonaæ:
+1)wczytaæ przeiwprostok¹tn¹ c_sci (trzy litery nazwiska ucznia) oraz przeciwprostok¹tn¹ b_sci,
+2)wypisaæ wczytane dane z jednost¹ cm, wielkoœæ 13 mm kolor fioletowy,
+3)oblicz przeciwprostok¹tn¹(2 miejsca po przecinku jednostka),
+4)oblicz obwód (2 miejsca po przecinku jednostka)(trzy litery nazwiska ucznia),
+5)pole z jednostk¹ (2 miejsca po przecinku jednostka)(trzy litery nazwiska ucznia),
+6)wysokoœci (2 miejsca po przecinku jednostka)(trzylitery nazwiska ucznia),
+7)wszystkie funkcje trygometryczne (3 miejsca po przecinku),
+8)k¹ty trójk¹ta wyra¿one w stopniach
+u¿yj modu³u  Math. (opis s.180 instrukcja)

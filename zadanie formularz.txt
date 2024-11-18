@@ -1,0 +1,12 @@
+Zadanie na ocenê: wykonaæ formularz zg³oszeniowy do pracy. Formularz bêdzie zawiera³:
+- pola radio
+- pola checkbox
+- listy rozwijalne
+- pola wpisywania danych
+- przycisk "oblicz"
+- t³o
+- interesuj¹c¹ szatê graficzn¹
+- adres e-mail z walidacj¹
+
+
+Uwzglêdniæ ró¿ne VATy i rabaty
