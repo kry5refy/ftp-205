@@ -1,0 +1,33 @@
+program (wzrost):
+	po wczytaniu do zmiennej "wzrost_wes" (3 pierwsze litery nazwiska) poda text. 
+	mozliwe odp programu:
+		-x<80  wzrost niemozliwy
+		-x>=80 AND x<120 jestes liliputem
+		-x>=120 AND x<145 wzrost bardzo niski
+		-x>=145 AND x<158 wzrost niski	
+		-x>=158 AND x<170 wzrost sredni
+		-x>=170 AND x<195 wzrost wysoki
+		-x>=195 AND x<232 wzrost bardzo wysoki
+		-x>232 wzrost niemozliwy
+ 		 
+
+
+
+PRACA DOM:
+
+1.   zmodyfikowac prog poprzedni tak aby reagowal na te same liczby
+2.   zmodyfikowac zad z wzrostem oprócz wzrostu wczytywac bedziemy p³eæ oraz dziecko/doros³y.
+	do zmiennej typu "char" wczytujemy literkê "m"  or "k" or "d" 
+	(mêzczyzna, kobieta, dziecko) (M,K,D) tez moze byc.
+	przydzialu do grup wzrostowych zaproponuj sam
+
+				MAILEM do 28 22:00 tresc zadania
+				wzrost 2 razy (v1 i v2)   
+				sortowanie (v1 i v2)
+				TEMAT MAILA to nazwisko klasa grp - wzrost - sortowanie
+
+wskazówka:
+
+char znak;
+if((znak=='m')||(znak=='M'))
+   {.................;}
