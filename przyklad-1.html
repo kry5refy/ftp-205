@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+<head>
+	<title>przykład 1: Kafelkowanie z CSS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css">
+body{
+  background-color: #DDECFE;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	}
+
+/* wyglad paska narzedzi */
+.toolbar{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	}
+.toolbar li{
+	float: left;
+	height: 26px;
+	background-position: 0 0%;
+	background-image: url(toolbar.png);
+	background-repeat: no-repeat;
+	text-indent: -999em;
+	}
+.toolbar li.left{
+	background-position: 0 100%;
+	width: 2px;
+	}
+.toolbar li.separator{
+	background-position: -2px 100%;
+	width: 4px;
+	}
+.toolbar li.right{
+	background-position: -6px 100%;
+	width: 2px;
+	}
+
+/* definicje przycisków */
+.toolbar li a {
+	display: block;
+	width: 25px;
+	height: 25px;
+	background-image: url(toolbar-buttons.png);
+	background-repeat: no-repeat;
+	}
+
+/* kafelki */
+.toolbar a.wbstm {
+	background-position: 0 0%;
+	}
+.toolbar a.wbstm:hover {
+	background-position: 0 100%;
+	}
+.toolbar .stlbst {
+	background-position: -25px 0%;
+	}
+.toolbar .stlbst:hover {
+	background-position: -25px 100%;
+	}
+.toolbar .meetup {
+	background-position: -50px 0%;
+	}
+.toolbar .meetup:hover {
+	background-position: -50px 100%;
+	}
+.toolbar .magwerk {
+	background-position: -75px 0%;
+	}
+.toolbar .magwerk:hover {
+	background-position: -75px 100%;
+	}
+.toolbar .ala {
+	background-position: -100px 0%;
+	}
+.toolbar .ala:hover {
+	background-position: -100px 100%;
+	}	
+	</style>
+</head>
+<body>
+	
+	<ul class="toolbar">
+		<li class="left">-</li>
+		<li><a class="wbstm" title="idź do Webesteem" href="http://www.webesteem.pl/">Webesteem</a></li>
+		<li><a class="stlbst" title="idź do Styleboost" href="http://www.styleboost.com/">Styleboost</a></li>
+		<li><a class="ala" title="idź do A List Apart" href="http://www.alistapart.com/">A List Apart</a></li>
+		<li class="separator">-</li>
+		<li><a class="meetup" title="idź do Meetup" href="http://www.meetup.com/">Meetup</a></li>
+		<li><a class="magwerk" title="idź do Digital Web Magazine" href="http://digital-web.com/">Digital Web Magazine</a></li>
+		<li class="right">-</li>
+	</ul>
+	
+	<p style="clear: both">
+		<br/><a href="http://jigsaw.w3.org/css-validator/check/referer">Poprawny CSS</a>
+		<br/><a href="http://validator.w3.org/check?uri=referer">Poprawny XHTML 1.0 Strict</a>
+	</p>
+	
+	<p>Przetestowane w:</p>
+	
+	<ul>
+		<li>Windows: IE 6, Firefox 1.5, Opera 8.5</li>
+		<li>Mac: Safari 2.0.2, IE 5.3.2</li>
+		<li>Linux: Konqueror 3.4.1</li>
+	</ul>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+<head>
+	<title>przykład 2: Kafelkowanie z CSS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css">
+body{
+  background-color: #DDECFE;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	}
+
+/* wyglad paska narzedzi */
+.toolbar{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	}
+.toolbar li{
+	float: left;
+	height: 26px;
+	background-position: 0 0%;
+	background-image: url(toolbar.png);
+	background-repeat: no-repeat;
+	text-indent: -999em;
+	}
+.toolbar li.left{
+	background-position: 0 100%;
+	width: 2px;
+	}
+.toolbar li.separator{
+	background-position: -2px 100%;
+	width: 4px;
+	}
+.toolbar li.right{
+	background-position: -6px 100%;
+	width: 2px;
+	}
+
+/* definicje przycisków */
+.toolbar li div {
+	width: 25px;
+	height: 25px;
+	background-image: url(toolbar-buttons.png);
+	background-repeat: no-repeat;
+	background-position: 25px 0%;
+	cursor: pointer;
+	}
+	</style>
+	<script type="text/javascript">
+//<![CDATA[
+var tileWidht=25;
+var tilePrefix='kafelka';
+	
+window.onload=function()
+{
+	var toolbar1=document.getElementById('toolbar1');
+	loadTiles(toolbar1);
+}
+
+function loadTiles(node)
+{
+	var div=node.getElementsByTagName('div');
+	for (var i=0;i<div.length;i++)
+	{
+		var tile=div[i].className.replace(tilePrefix,'')
+		div[i].style.backgroundPosition = '-' + tile*tileWidht + 'px 0%';  //ex. "-25px 0%"
+		
+		div[i].onmouseover=function ()
+		{
+			var tile=this.className.replace(tilePrefix,'')
+			this.style.backgroundPosition = '-' + tile*tileWidht + 'px 100%';
+		}
+		div[i].onmouseout=function ()
+		{
+			var tile=this.className.replace(tilePrefix,'')
+			this.style.backgroundPosition = '-' + tile*tileWidht + 'px 0%';
+		}
+	}
+}
+//]]>
+	</script>
+</head>
+<body>
+	
+	<ul class="toolbar" id="toolbar1">
+		<li class="left">-</li>
+		<li><div class="kafelka5" title="Pogrubienie" onclick="alert('kliknięto Pogrubienie')"></div></li>
+		<li><div class="kafelka6" title="Kursywa" onclick="alert('kliknięto Pogrubienie')"></div></li>
+		<li><div class="kafelka7" title="Podkreślenie" onclick="alert('kliknięto Podkreślenie')"></div></li>
+		<li><div class="kafelka8" title="Odnośnik" onclick="alert('kliknięto Odnośnik')"></div></li>
+		<li class="separator">-</li>
+		<li><div class="kafelka9" title="Kopiuj" onclick="alert('kliknięto Kopiuj')"></div></li>
+		<li><div class="kafelka10" title="Wytnij" onclick="alert('kliknięto Wytnij')"></div></li>
+		<li><div class="kafelka11" title="Wklej" onclick="alert('kliknięto Wklej')"></div></li>
+		<li class="separator">-</li>
+		<li><div class="kafelka12" title="Cofnij" onclick="alert('kliknięto Cofnij')"></div></li>
+		<li><div class="kafelka13" title="Powtórz" onclick="alert('kliknięto Powtórz')"></div></li>
+		<li class="right">-</li>
+	</ul>
+	
+	<p style="clear: both">
+		<br/><a href="http://jigsaw.w3.org/css-validator/check/referer">Poprawny CSS</a>
+		<br/><a href="http://validator.w3.org/check?uri=referer">Poprawny XHTML 1.0 Strict</a>
+	</p>
+	
+	<p>Przetestowane w:</p>
+	
+	<ul>
+		<li>Windows: IE 6, Firefox 1.5, Opera 8.5</li>
+		<li>Mac: Safari 2.0.2, IE 5.3.2</li>
+		<li>Linux: Konqueror 3.4.1</li>
+	</ul>
+	
+</body>
+</html>
